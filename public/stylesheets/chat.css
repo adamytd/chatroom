@@ -176,3 +176,22 @@
     bottom: 20px;
     cursor: pointer;
 }
+
+form{
+    position: absolute;
+    bottom: 114px;
+    left: 50px;
+    z-index: 10;
+}
+a{
+    cursor: pointer;
+}
+.file{
+    color: #1681e3;
+}
+.msg.toall{
+    color: #8392ff;
+}
+.msg.toone{
+    color: #9549ff;
+}

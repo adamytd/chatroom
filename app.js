@@ -5,6 +5,8 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var dl=require('delivery');
+var fs=require('fs');
 
 
 var app = express();
@@ -31,18 +33,20 @@ app.get('/chatroom', function (req, res) {
 });
 app.get('/', function (req, res) {
   res.sendfile('views/signin.html');
-  console.log("Cookies: ", req.cookies)
 });
 app.post('/', function (req, res) {
-  if (users[req.body.name]) {
-    //存在，则不允许登陆
-    alert('用户已存在');
-    res.redirect('/');
-  } else {
-    //不存在，把用户名存入 cookie 并跳转到主页
-    res.cookie("user", req.body.name, {maxAge: 1000*60*60*24});
-    res.redirect('/chatroom');
-  }
+    if (users[req.body.name]) {
+      console.log(users[req.body.name])
+      //存在，则不允许登陆
+      res.redirect('/');
+    } else {
+
+      //不存在，把用户名存入 cookie 并跳转到主页
+      res.cookie("user", req.body.name, {maxAge: 1000*60*60*24});
+      res.redirect('/chatroom');
+    }
+
+
 });
 
 
@@ -57,7 +61,6 @@ io.sockets.on('connection', function (socket) {
     //users 对象中不存在该用户名则插入该用户名
     if (!users[data.user]) {
       users[data.user] = data.user;
-      console.log(users);
     }
     //向所有用户广播该用户上线信息
     io.sockets.emit('online', {users: users, user: data.user});
@@ -72,6 +75,7 @@ io.sockets.on('connection', function (socket) {
       socket.broadcast.emit('offline', {users: users, user: socket.name});
     }
   });
+
   //有人发话
   socket.on('say', function (data) {
     if (data.to == 'all') {
@@ -81,24 +85,6 @@ io.sockets.on('connection', function (socket) {
       //向特定用户发送该用户发话信息
       //clients 为存储所有连接对象的数组
       var clients = findClientsSocket() ;
-      function findClientsSocket(roomId, namespace) {
-        var res = []
-        , ns = io.of(namespace ||"/");    // the default namespace is "/"
-
-        if (ns) {
-          for (var id in ns.connected) {
-            if(roomId) {
-              var index = ns.connected[id].rooms.indexOf(roomId) ;
-              if(index !== -1) {
-                res.push(ns.connected[id]);
-              }
-            } else {
-              res.push(ns.connected[id]);
-            }
-          }
-        }
-        return res;
-      }
       //遍历找到该用户
       clients.forEach(function (client) {
         if (client.name == data.to) {
@@ -108,6 +94,76 @@ io.sockets.on('connection', function (socket) {
       });
     }
   });
+//  socket.on('receive',function(data){
+//    var cls = findClientsSocket() ;
+//    cls.forEach(function (client) {
+//      if (client.name == data.to) {
+//        console.log(client.name);
+//        client.emit('receive',data);
+//      }
+//    });
+//  });
+  function findClientsSocket(roomId, namespace) {
+    var res = []
+    , ns = io.of(namespace ||"/");    // the default namespace is "/"
+
+    if (ns) {
+      for (var id in ns.connected) {
+        if(roomId) {
+          var index = ns.connected[id].rooms.indexOf(roomId) ;
+          if(index !== -1) {
+            res.push(ns.connected[id]);
+          }
+        } else {
+          res.push(ns.connected[id]);
+        }
+      }
+    }
+    return res;
+  }
+  var delivery = dl.listen(socket);
+  delivery.on('receive.start',function(filePackage){
+    console.log(filePackage.name);
+  });
+  delivery.on('receive.success',function(file){
+    var params = file.params;
+    fs.writeFile('./public/files/'+file.name,file.buffer, function(err){
+      if(err){
+        console.log(err);
+      }else{
+        console.log('File saved.');
+        var cls = findClientsSocket() ;
+        cls.forEach(function (client) {
+          if (client.name == file.params.to||client.name ==file.params.from) {
+            console.log(client.name);
+            data = {
+              url:"../files/"+file.name,
+              name:file.name,
+              from:file.params.from,
+              to:file.params.to
+            };
+            client.emit('receive',data);
+          }
+        });
+      };
+    });
+  });
+
+
+//  delivery.on('file.load',function(filePackage){
+//    var userdata = filePackage.params;
+//    console.log(1)
+//    var clients = findClientsSocket() ;
+//    clients.forEach(function (client) {
+//      if (client.name == userdata.to) {
+//        delivery.send({
+//          name:filePackage.name,
+//          path:'./'+filePackage.name,
+//          to: userdata.to
+//        });
+//      }
+//    });
+//  });
 
 });
 

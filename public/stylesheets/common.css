@@ -4,9 +4,10 @@ body{
   width: 100%;
   position: absolute;
   float: left;
+  font-family: "微软雅黑";
 }
 a{
-  text-decoration: none;
+  text-decoration: none !important;
 }
 a:hover{
   color: #09F;

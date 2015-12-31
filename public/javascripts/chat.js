@@ -1,5 +1,6 @@
 $(document).ready(function () {
   var socket = io.connect();
+  var delivery = new Delivery(socket);
   var from = $.cookie('user');//从 cookie 中读取用户名，存于变量 from
   var to = 'all';//设置默认接收对象为"所有人"
   //发送用户上线信号
@@ -7,9 +8,9 @@ $(document).ready(function () {
   socket.on('online', function (data) {
     //显示系统消息
     if (data.user != from) {
-      var sys = '<div style="color:#f00">系统(' + now() + '):' + '用户 ' + data.user + ' 上线了！</div>';
+      var sys = '<div style="color:#d76133">系统(' + now() + '):' + '用户 ' + data.user + ' 上线了！</div>';
     } else {
-      var sys = '<div style="color:#f00">系统(' + now() + '):欢迎进入聊天室！</div>';
+      var sys = '<div style="color:#d76133">系统(' + now() + '):欢迎进入聊天室！</div>';
     }
     $("#contents").append(sys + "<br/>");
     $('#contents').scrollTop($('#contents').prop('scrollHeight'));
@@ -20,20 +21,23 @@ $(document).ready(function () {
 
   });
   socket.on('say', function (data) {
+    console.log(data);
     //对所有人说
     if (data.to == 'all') {
-      $("#contents").append('<div>' + data.from + '(' + now() + ')对 所有人 说：<br/>' + data.msg + '</div><br />');
+      if(data.from==to)
+        data.from="我";
+      $("#contents").append('<div class="msg toall">' + data.from + '(' + now() + ')对 所有人 说：<br/>' + data.msg + '</div><br/>');
       $('#contents').scrollTop($('#contents').prop('scrollHeight'));
     }
     //对你密语
     if (data.to == from) {
-      $("#contents").append('<div style="color:#00f" >' + data.from + '(' + now() + ')对 你 说：<br/>' + data.msg + '</div><br />');
+      $("#contents").append('<div class="msg toone">' + data.from + '(' + now() + ')对 你 说：<br/>' + data.msg + '</div><br />');
       $('#contents').scrollTop($('#contents').prop('scrollHeight'));
     }
   });
   socket.on('offline', function (data) {
     //显示系统消息
-    var sys = '<div style="color:#f00">系统(' + now() + '):' + '用户 ' + data.user + ' 下线了！</div>';
+    var sys = '<div style="color:#d76133">系统(' + now() + '):' + '用户 ' + data.user + ' 下线了！</div>';
     $("#contents").append(sys + "<br/>");
     $('#contents').scrollTop($('#contents').prop('scrollHeight'));
     //刷新用户在线列表
@@ -47,7 +51,7 @@ $(document).ready(function () {
   });
   //服务器关闭
   socket.on('disconnect', function () {
-    var sys = '<div style="color:#f00">系统:连接服务器失败！</div>';
+    var sys = '<div style="color:#d76133">系统:连接服务器失败！</div>';
     $("#contents").append(sys + "<br/>");
     $("#list").empty();
     $('#contents').scrollTop($('#contents').prop('scrollHeight'));
@@ -55,11 +59,24 @@ $(document).ready(function () {
 
   //重新启动服务器
   socket.on('reconnect', function () {
-    var sys = '<div style="color:#f00">系统:重新连接服务器！</div>';
+    var sys = '<div style="color:#d76133">系统:重新连接服务器！</div>';
     $("#contents").append(sys + "<br/>");
     $('#contents').scrollTop($('#contents').prop('scrollHeight'));
     socket.emit('online', {user: from});
   });
+  //接受文件
+  socket.on('receive',function(data){
+    console.log(data);
+    if(data.from==from)
+    {data.from="我";}
+    else if(data.to==from)
+    {data.to="你"}
+    $("#contents").append('<div class="msg">'+ data.from +' 向 '+data.to+' 发送文件'+ '(' + now() + ')'+' ：</div>');
+    $("#contents").append("<a class='file' onclick='window.open("+'"'+data.url+'"'+")'>"+data.name+"</a><br><br>");
+    $('#contents').scrollTop($('#contents').prop('scrollHeight'));
+    //<a onclick="window.open('http://localhost:3000/files/SampleQuestions.pdf')">a</a>
+  });
+
   //刷新用户在线列表
   function flushUsers(users) {
     //清空之前用户列表，添加 "所有人" 选项并默认为灰色选中效果
@@ -97,16 +114,29 @@ $(document).ready(function () {
     return time;
   }
 
+
   //发话
   function sendMsg(){
+      var file = $("input[type=file]")[0].files[0];
+      if(file)
+      {
+        if(to=='all')
+          alert('请选择发送对象');
+        else{
+          var extraParams = {from: from, to: to};
+          delivery.send(file,extraParams);
+          $("form").find("input[type=file]").val("");
+        }
+      }
+
     //获取要发送的信息
     var $msg = $("#input_content").html();
     if ($msg == "") return;
     //把发送的信息先添加到自己的浏览器 DOM 中
     if (to == "all") {
-      $("#contents").append('<div>你(' + now() + ')对 所有人 说：<br/>' + $msg + '</div><br />');
+      $("#contents").append('<div class="msg from">我(' + now() + ')：<br/>' + $msg + '</div><br/>');
     } else {
-      $("#contents").append('<div style="color:#00f" >你(' + now() + ')对 ' + to + ' 说：<br/>' + $msg + '</div><br />');
+      $("#contents").append('<div class="msg from">' + '我' + '(' + now() + ')对 '+ to +' 说：<br/>' + $msg + '</div><br />');
     }
     $('#contents').scrollTop($('#contents').prop('scrollHeight'));
     //发送发话信息
@@ -121,6 +151,36 @@ $(document).ready(function () {
     // Enter is pressed
     if (e.keyCode == 13) { sendMsg(); }
   }, false);
+
+  //
+
+//  delivery.on('delivery.connect',function(delivery){
+//    $("input[type=submit]").click(function(evt){
+//      if(to=='all')
+//        alert('请选择发送对象');
+//      else{
+//        var file = $("input[type=file]")[0].files[0];
+//        console.log(file);
+//        var extraParams = {from: from, to: to};
+//        console.log(delivery)
+//        delivery.send(file,extraParams);
+//        evt.preventDefault();
+//      }
+//    });
+//  });
+//  delivery.on('send.success',function(fileUID){
+//    console.log("file was successfully sent.");
+//  });
+
+  //
+//  delivery.on('receive.success',function(data){
+//    if (data.to == from) {
+//      console.log(data);
+//    }
+//  });
+
+
+
 });
 $(window).keydown(function (e) {
   if (e.keyCode == 116) {

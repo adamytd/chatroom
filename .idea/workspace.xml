@@ -22,52 +22,87 @@
     <favorites_list name="wchat" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="38" selection-start="1714" selection-end="1714" vertical-scroll-proportion="-0.092633925" vertical-offset="1708" max-vertical-offset="3000">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chat.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/chat.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="66" selection-start="464" selection-end="464" vertical-scroll-proportion="-9.821428" vertical-offset="0" max-vertical-offset="3475">
-              <folding>
-                <marker date="1450703381110" expanded="true" signature="316:326" placeholder="..." />
-                <marker date="1450703381110" expanded="false" signature="427:437" placeholder="..." />
-                <marker date="1450703381110" expanded="true" signature="1013:1023" placeholder="..." />
-                <marker date="1450703381110" expanded="true" signature="1263:1273" placeholder="..." />
-                <marker date="1450703381110" expanded="true" signature="1672:1682" placeholder="..." />
-                <marker date="1450703381110" expanded="true" signature="1922:1932" placeholder="..." />
-                <marker date="1450703381110" expanded="true" signature="3625:3635" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="56" selection-start="1095" selection-end="1095" vertical-scroll-proportion="-17.264706" vertical-offset="188" max-vertical-offset="1050">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chat.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/chat.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="23" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.0" vertical-offset="3604" max-vertical-offset="4575">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="chat.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/javascripts/chat.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="13" column="5" selection-start="524" selection-end="524" vertical-scroll-proportion="15.178572" vertical-offset="750" max-vertical-offset="4975">
+                  <folding>
+                    <marker date="1451543243624" expanded="true" signature="355:368" placeholder="..." />
+                    <marker date="1451543243624" expanded="true" signature="469:482" placeholder="..." />
+                    <marker date="1451543243624" expanded="true" signature="1393:1406" placeholder="..." />
+                    <marker date="1451543243624" expanded="false" signature="1805:1818" placeholder="..." />
+                    <marker date="1451543243624" expanded="false" signature="2058:2071" placeholder="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="signin.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/signin.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="17" column="47" selection-start="532" selection-end="532" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="725">
+                  <folding>
+                    <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="common.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/stylesheets/common.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="9" column="2" selection-start="164" selection-end="164" vertical-scroll-proportion="-7.035714" vertical-offset="28" max-vertical-offset="2900">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="40" column="24" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.5243488" vertical-offset="537" max-vertical-offset="4400">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="21" column="25" selection-start="727" selection-end="727" vertical-scroll-proportion="-5.852941" vertical-offset="326" max-vertical-offset="1175">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="chat.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/stylesheets/chat.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="195" column="19" selection-start="3137" selection-end="3137" vertical-scroll-proportion="0.0" vertical-offset="4079" max-vertical-offset="5050">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="144" column="25" selection-start="3885" selection-end="3885" vertical-scroll-proportion="0.8640997" vertical-offset="2837" max-vertical-offset="4400">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -80,14 +115,14 @@
         <option value="$PROJECT_DIR$/public/javascripts/jquery.cookie.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/chat.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/signin.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/common.css" />
         <option value="$PROJECT_DIR$/views/signin.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public/javascripts/socket.io.js" />
-        <option value="$PROJECT_DIR$/public/stylesheets/chat.css" />
-        <option value="$PROJECT_DIR$/public/javascripts/chat.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/index.html" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/common.css" />
+        <option value="$PROJECT_DIR$/public/javascripts/chat.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/chat.css" />
       </list>
     </option>
   </component>
@@ -124,32 +159,31 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
+              <option name="myItemId" value="chatroom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
+              <option name="myItemId" value="chatroom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
+              <option name="myItemId" value="chatroom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
+              <option name="myItemId" value="chatroom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
+              <option name="myItemId" value="chatroom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -159,11 +193,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
+              <option name="myItemId" value="chatroom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
+              <option name="myItemId" value="chatroom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -173,11 +207,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
+              <option name="myItemId" value="chatroom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
+              <option name="myItemId" value="chatroom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -191,11 +225,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
+              <option name="myItemId" value="chatroom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
+              <option name="myItemId" value="chatroom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -209,11 +243,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
+              <option name="myItemId" value="chatroom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
+              <option name="myItemId" value="chatroom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -221,27 +255,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wchat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../chat/chat-example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -283,14 +304,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14765458" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12686567" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -324,11 +345,145 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/chat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="18" selection-start="218" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="275" max-vertical-offset="550">
+        <state line="151" column="7" selection-start="4830" selection-end="4830" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4775">
+          <folding>
+            <marker date="1451543243624" expanded="true" signature="355:368" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="469:482" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="1393:1406" placeholder="..." />
+            <marker date="1451543243624" expanded="false" signature="1805:1818" placeholder="..." />
+            <marker date="1451543243624" expanded="false" signature="2058:2071" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="71" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1175">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/chat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="14" selection-start="2995" selection-end="2995" vertical-scroll-proportion="0.0" vertical-offset="3857" max-vertical-offset="4750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="500" max-vertical-offset="4025">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="2" selection-start="3361" selection-end="3361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4325">
+          <folding>
+            <marker date="1451543243624" expanded="true" signature="355:368" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="469:482" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="1393:1406" placeholder="..." />
+            <marker date="1451543243624" expanded="false" signature="1805:1818" placeholder="..." />
+            <marker date="1451543243624" expanded="false" signature="2058:2071" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="6" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="313" max-vertical-offset="1175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/chat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="0" selection-start="2978" selection-end="2978" vertical-scroll-proportion="0.0" vertical-offset="3728" max-vertical-offset="4725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="3975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="6" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="313" max-vertical-offset="1175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/chat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="0" selection-start="2978" selection-end="2978" vertical-scroll-proportion="0.0" vertical-offset="3728" max-vertical-offset="4725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="26" selection-start="2948" selection-end="2948" vertical-scroll-proportion="0.0" vertical-offset="3017" max-vertical-offset="4300">
+          <folding>
+            <marker date="1451543243624" expanded="true" signature="355:368" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="469:482" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="1393:1406" placeholder="..." />
+            <marker date="1451543243624" expanded="false" signature="1805:1818" placeholder="..." />
+            <marker date="1451543243624" expanded="false" signature="2058:2071" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="38" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.0" vertical-offset="1708" max-vertical-offset="3000">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="66" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="275" max-vertical-offset="3475">
+          <folding>
+            <marker date="1451543243624" expanded="true" signature="355:368" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="469:482" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="1393:1406" placeholder="..." />
+            <marker date="1451543243624" expanded="false" signature="1805:1818" placeholder="..." />
+            <marker date="1451543243624" expanded="false" signature="2058:2071" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="56" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0" vertical-offset="188" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/chat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="23" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.0" vertical-offset="3604" max-vertical-offset="4575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="18" selection-start="218" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="275" max-vertical-offset="550" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
@@ -342,13 +497,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="7" selection-start="3382" selection-end="3382" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="3050">
           <folding>
-            <marker date="1450703381110" expanded="true" signature="316:326" placeholder="..." />
-            <marker date="1450703381110" expanded="false" signature="427:437" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="1013:1023" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="1263:1273" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="1672:1682" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="1922:1932" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="3625:3635" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="355:368" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="469:482" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="1393:1406" placeholder="..." />
+            <marker date="1451543243624" expanded="false" signature="1805:1818" placeholder="..." />
+            <marker date="1451543243624" expanded="false" signature="2058:2071" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -369,9 +522,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="18" selection-start="218" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="275" max-vertical-offset="550">
-          <folding />
-        </state>
+        <state line="11" column="18" selection-start="218" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="275" max-vertical-offset="550" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
@@ -385,13 +536,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="3050">
           <folding>
-            <marker date="1450703381110" expanded="true" signature="316:326" placeholder="..." />
-            <marker date="1450703381110" expanded="false" signature="427:437" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="1013:1023" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="1263:1273" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="1672:1682" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="1922:1932" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="3625:3635" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="355:368" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="469:482" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="1393:1406" placeholder="..." />
+            <marker date="1451543243624" expanded="false" signature="1805:1818" placeholder="..." />
+            <marker date="1451543243624" expanded="false" signature="2058:2071" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -410,36 +559,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="896" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.cookie.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="21" selection-start="2294" selection-end="2294" vertical-scroll-proportion="0.9580974" vertical-offset="1379" max-vertical-offset="2375" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/signin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1075" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="14" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2875" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/jquery-1.11.2.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="883">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/npm-debug.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="52" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="1075" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="883" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
@@ -459,64 +586,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/socket.io/node_modules/socket.io-client/socket.io.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="0" selection-end="174046" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="174850">
-          <folding />
-        </state>
+        <state line="12" column="18" selection-start="0" selection-end="174046" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="174850" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/socket.io.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="174850">
+        <state line="8" column="5" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="174850" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="18" selection-start="218" selection-end="231" vertical-scroll-proportion="0.31902552" vertical-offset="0" max-vertical-offset="862" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/signin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="873">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="873">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="2" selection-start="164" selection-end="164" vertical-scroll-proportion="-7.035714" vertical-offset="28" max-vertical-offset="2900">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/chat.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="23" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.0" vertical-offset="3604" max-vertical-offset="4575">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="18" selection-start="218" selection-end="231" vertical-scroll-proportion="0.31902552" vertical-offset="0" max-vertical-offset="862">
+        <state line="195" column="19" selection-start="3137" selection-end="3137" vertical-scroll-proportion="0.0" vertical-offset="4079" max-vertical-offset="5050">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/signin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="7" selection-start="647" selection-end="647" vertical-scroll-proportion="0.66705334" vertical-offset="0" max-vertical-offset="862">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="56" selection-start="1095" selection-end="1095" vertical-scroll-proportion="-17.264706" vertical-offset="188" max-vertical-offset="1050">
-          <folding />
+        <state line="17" column="47" selection-start="532" selection-end="532" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="725">
+          <folding>
+            <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/chat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="66" selection-start="464" selection-end="464" vertical-scroll-proportion="-9.821428" vertical-offset="0" max-vertical-offset="3475">
+        <state line="13" column="5" selection-start="524" selection-end="524" vertical-scroll-proportion="15.178572" vertical-offset="750" max-vertical-offset="4975">
           <folding>
-            <marker date="1450703381110" expanded="true" signature="316:326" placeholder="..." />
-            <marker date="1450703381110" expanded="false" signature="427:437" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="1013:1023" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="1263:1273" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="1672:1682" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="1922:1932" placeholder="..." />
-            <marker date="1450703381110" expanded="true" signature="3625:3635" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="355:368" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="469:482" placeholder="..." />
+            <marker date="1451543243624" expanded="true" signature="1393:1406" placeholder="..." />
+            <marker date="1451543243624" expanded="false" signature="1805:1818" placeholder="..." />
+            <marker date="1451543243624" expanded="false" signature="2058:2071" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="25" selection-start="727" selection-end="727" vertical-scroll-proportion="-5.852941" vertical-offset="326" max-vertical-offset="1175">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="38" selection-start="1714" selection-end="1714" vertical-scroll-proportion="-0.092633925" vertical-offset="1708" max-vertical-offset="3000">
+        <state line="40" column="24" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.5243488" vertical-offset="537" max-vertical-offset="4400">
           <folding />
         </state>
       </provider>
